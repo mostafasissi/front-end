@@ -15,7 +15,9 @@ export class SignUpComponent {
     firstName : ['' , Validators.required],
     lastName :  ['' , Validators.required],
   })
-  constructor(private fb : FormBuilder){}
+  constructor(
+    private fb : FormBuilder , 
+    ){}
 
   onSubmit(){
     console.log(this.userForm.value);
